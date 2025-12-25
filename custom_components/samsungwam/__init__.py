@@ -11,6 +11,7 @@ from homeassistant.const import Platform
 from homeassistant.core import HomeAssistant
 from homeassistant.exceptions import ConfigEntryNotReady
 from homeassistant.helpers.event import async_track_time_interval
+from homeassistant.helpers.service_info.ssdp import ATTR_UPNP_MODEL_NAME
 
 from .const import DOMAIN
 from .wam_coordinator import SamsungWamCoordinator

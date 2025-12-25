@@ -87,7 +87,7 @@ class SamsungWamConfigFlow(ConfigFlow, domain=DOMAIN):
 
         # Upnp data
         host = urlparse(discovery_info.ssdp_location).hostname
-        ssdp_model = discovery_info.upnp.get(ssdp.ATTR_UPNP_MODEL_NAME)
+        ssdp_model = discovery_info.upnp.get(ATTR_UPNP_MODEL_NAME)
         # serial_number = discovery_info.upnp.get(ssdp.ATTR_UPNP_SERIAL)
 
         # Speaker info from pywam
